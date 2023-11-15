@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;700;800&display=swap');
+
 :root {
     --white: #fcfcfd;
     --black: #363738;
@@ -9,16 +11,73 @@
     --background: #f1f2f3;
     --ylw_primary: #ffc635;
     --ppl_primary: #9864da;
-    --overlay-black: rgba(35, 35, 35, .9);
+    --overlay-black: rgba(35, 35, 35, 0.9);
     --light_grey: #dcdee1;
     --hrf_primary: #31b7f0;
-    --overlay-green: rgba(40, 238, 167, .9);
+    --overlay-green: rgba(40, 238, 167, 0.9);
     --ghost-white: #ecedf3;
-    --purple-overlay: rgba(152, 100, 218, .9);
+    --purple-overlay: rgba(152, 100, 218, 0.9);
 }
 
-*, *::before, *::after{
+*,
+*::before,
+*::after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Noto Sans mono', monospace, sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+h1{
+    font-size: 2.1rem
+}
+
+h2{
+    font-size: 1.55rem;
+}
+
+p {
+    font-family: 'Noto Sans mono', monospace, sans-serif;
+    font-size: 1rem;
+}
+
+a{
+    font-size: 1rem;
+    padding: 12px 20px;
+    font-family: 'Noto Sans mono', monospace, sans-serif;
+    font-weight: 800; 
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    transition: transform .1s ease-in;
+}
+
+a:active{
+    transform: scale(.9);
+}
+
+@media (max-width: 776px){
+    h1{
+        font-size: 1.5rem
+    }
+
+    h2{
+        font-size: 1rem;
+    }
+
+    a, p {
+        font-size: .8rem;
+    }
+
 }
