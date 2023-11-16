@@ -380,60 +380,66 @@ header button{
     aspect-ratio: 16/9;
 }
 
+/* Milestones Section */
 
-@media (max-width: 1000px) {
-    /* header */
-    header {
-        padding: 0 8%;
-        top: 40px;
-    }
-    /* hero */
-    .hero-section {
-        flex-direction: column;
-        height: auto;
-    }
-    .hero {
-        height: 100vh;
-        width: 100%;
-        background-position: top;
-    }
-    .hero-desc {
-        width: 90%;
-        max-width: max-content;
-    }
-
-    /* navbar overlay */
-
-    .navbar-overlay {
-        padding: 10%;
-    }
-
-    .nav-item {
-        font-size: 1.3rem;
-    }
+#milestones {
+    padding: var(--main-padding);
+    min-height: 800px;
 }
 
-@media (max-width: 776px) {
-    /* navbar overlay*/
+.milestones-wrapper {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    height: 100%;
+    gap: 20px;
+}
 
-    .navbar-overlay {
-        flex-direction: column;
-    }
+.milestones-left, .milestones-right {
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100%; /* Set the height to 100% */
+    gap: 20px;
+}
 
-    .nav-list {
-        align-items: center;
-    }
+.milestone {
+    flex: 1;
+    width: 100%;
+    padding: 38px;
+    background-color: var(--background);
+    border-radius: 18px;
+    color: var(--black);
+    min-height: 100%; /* Set the height to 100% */
+}
 
-    .nav-item {
-        text-align: center;
-        font-size: 1.3rem;
-    }
+.milestones-top-wrapper .milestone:nth-child(1){
+    flex: 1.5;
+}
 
-    .hr-factory-wrapper {
-        width: 100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
+
+.milestone-rates{
+    font-size: 8rem;
+}
+
+.milestone-title{
+    font-size: 1.8rem;
+    text-transform: lowercase;
+}
+
+.milestone-title-large{
+    font-size: 4rem;
+}
+
+.milestone-desc ul li{
+    font-family: 'Noto Sans mono';
+    font-size: .8rem;
+}
+
+.milestones-top-wrapper, .milestones-bottom-wrapper{
+    flex: 1;    
+    display: flex;
+    gap: 20px;
 }

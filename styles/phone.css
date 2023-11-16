@@ -41,4 +41,40 @@
         border-width: 8px;
     }
 
+
+    /* hello world! section */
+
+    .milestone-rates{
+        font-size: 4rem;
+    }
+
+    .milestone-title{
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .milestones-wrapper{
+        width: 100%;
+    }
+
+    .milestone{
+        padding:20px 10%;
+        width: 100%;
+    }
+
+    .milestones-left, .milestones-right{
+        width: 100%;
+    }
+    .milestone-rates, .milestone-title-large{
+        font-size: 2rem;
+    }
+
+    .milestone-title{
+        font-size: .8rem;
+        margin-bottom: 20px;
+    }
+    
 }

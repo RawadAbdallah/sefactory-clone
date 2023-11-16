@@ -86,11 +86,13 @@ ul {
     opacity: 0;
 }
 
-@media (max-width: 776px) {
-
+@media (max-width: 1000px) {
     :root{
         --main-padding: 20px 5%;
     }
+}
+
+@media (max-width: 776px) {
     h1 {
         font-size: 1.8rem;
     }
