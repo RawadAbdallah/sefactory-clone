@@ -53,6 +53,15 @@
         margin-bottom: 20px;
     }
 
+    /* Programs body */
+
+    .programs-body{
+        flex-direction: column;
+    }
+
+    .programs-body-right{
+        justify-content: center;
+    }
 }
 
 @media (max-width: 550px) {

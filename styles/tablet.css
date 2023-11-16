@@ -34,7 +34,35 @@
     .milestones-wrapper {
         flex-direction: column;
     }
+
+    /* programs section */
     
-    .
+    .program-title h1{
+        padding: 20px 0;
+        font-size: 1.2rem;
+        text-transform: none;
+        color: white;
+    }
+    
+    #program-desc-text{
+        color: var(--light_grey);
+        font-size: .8rem;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .program-footer{
+        flex-direction: column;
+    }
+
+    
+    .bootcamp-date, .program-footer button{
+        width: 100%;
+    }
+
+    .bootcamp-date p{
+        justify-content: flex-start;
+        font-size: .7rem;
+    }
     
 }

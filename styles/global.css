@@ -17,7 +17,7 @@
     --overlay-green: rgba(40, 238, 167, 0.9);
     --ghost-white: #ecedf3;
     --purple-overlay: rgba(152, 100, 218, 0.9);
-    --main-padding: 20px 15%;
+    --main-padding: 20px 6%;
 }
 
 *,
@@ -34,6 +34,7 @@ html, body {
 }
 
 body{
+    scroll-behavior: smooth;
     position: relative;
 }
 
@@ -85,6 +86,53 @@ ul {
     display: none;
     opacity: 0;
 }
+
+
+.section-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.section-header--title p{
+    display: flex;
+    align-items: center;
+    padding:0 20px;
+    gap: 15px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--black);
+}
+
+.section-header--title span{
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.section-header--icons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section-header--icons div{
+    width: 25px;
+    height: 25px;
+    background-color: var(--black);
+    border-radius: 50%;
+}
+
+.section-header--icons div:nth-child(2){
+    background-color: var(--light_grey);
+}
+
+.section-header--icons div:nth-child(3){
+    background-color: var(--overlay-green);
+}
+
 
 @media (max-width: 1000px) {
     :root{
