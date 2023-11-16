@@ -1,5 +1,4 @@
 /* header */
-
 header {
     position: absolute;
     display: flex;
@@ -18,6 +17,13 @@ header {
 
 .logo img {
     width: 100%;
+}
+
+header button{
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    border: none;
 }
 
 #menu-toggler {
@@ -312,6 +318,69 @@ header {
     color: var(--black);
 }
 
+/* Hello World! Section */
+
+#hello-world{
+    background-color: var(--background);
+    padding: var(--main-padding);
+}
+
+.section-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.section-header--title p{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--black);
+}
+
+.section-header--title span{
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.section-header--icons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section-header--icons div{
+    width: 25px;
+    height: 25px;
+    background-color: var(--black);
+    border-radius: 50%;
+}
+
+.section-header--icons div:nth-child(2){
+    background-color: var(--light_grey);
+}
+
+.section-header--icons div:nth-child(3){
+    background-color: var(--overlay-green);
+}
+
+.iframe-wrapper{
+    width:100%;
+}
+
+.iframe-wrapper iframe{
+    width: 100%;
+    border: 15px solid var(--sef_primary);
+    border-radius: 14px;
+    aspect-ratio: 16/9;
+}
+
+
 @media (max-width: 1000px) {
     /* header */
     header {
@@ -356,6 +425,7 @@ header {
     }
 
     .nav-item {
+        text-align: center;
         font-size: 1.3rem;
     }
 

@@ -1,0 +1,44 @@
+
+@media (max-width: 776px) {
+    /* navbar overlay*/
+    .navbar-overlay {
+        flex-direction: column;
+    }
+
+    .nav-list {
+        align-items: center;
+    }
+
+    .nav-item {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    .hr-factory-wrapper {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Hello World! Section */
+
+    .section-header--title p{
+        font-size: 1.2rem;
+    }
+
+    .section-header--title span{
+        font-size: 1.4rem;
+    }
+
+    .section-header--icons div{
+        width: 15px;
+        height: 15px;
+    }
+
+    .iframe-wrapper iframe{
+        border-width: 8px;
+    }
+
+}

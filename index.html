@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/tablet.css">
+    <link rel="stylesheet" href="./styles/phone.css">
+    
+
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
@@ -14,50 +18,8 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <img src="./assets/se-logo (2).png" alt="SEFACTORY">
-        </div>
-        <button id="menu-toggler" type="button">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </header>
 
-
-
-    <section id="hero" class="hero-section">
-        <div class="hero hero-left">
-            <div id="animated-hero-overlay" class="overlay"></div>
-            <div class="hero-header">
-                <h2 class="hero-eyebrow">want to become a</h2>
-                <h1 class="hero-title">
-                    <span id="typed_text">UI/UX Designer?<span id="typed_cursorr">_</span></span>
-                </h1>
-            </div>
-            <p id="animated-hero-desc" class="hero-desc">Jumpstart your journey in tech with our courses in Computer
-                Science, Full-Stack Web
-                development, Data Engineering and UI/UX Design. Get hands-on experience and gain essential skills for a
-                successful tech career</p>
-            <a class="link-button" href="#programs">#get_trained</a>
-        </div>
-        <div class="hero hero-right">
-            <div class="overlay"></div>
-            <div class="hero-header">
-                <h2 class="hero-eyebrow">want to hire </h2>
-                <h1 class="hero-title">
-                    JOB-READY TECH TALENT?
-                </h1>
-            </div>
-            <p class="hero-desc">Look no further than our comprehensive talent matching and placement services! Our
-                expert team will connect you with highly trained and skilled developers who are ready to hit the ground
-                running and drive your success.</p>
-            <a class="link-button" href="#hire_talent">#hire_talent</a>
-        </div>
-    </section>
-
-    <section class="navbar-overlay">
+    <section class="navbar-overlay hidden">
         <nav class="nav-left-wrapper">
             <ul class="nav-list">
                 <li><a class="nav-item active" href="#home">Home</a></li>
@@ -92,6 +54,73 @@
             </a>
         </div>
     </section>
+
+    <header>
+        <div class="logo">
+            <img src="./assets/se-logo (2).png" alt="SEFACTORY">
+        </div>
+        <button type="button">
+            <a id="menu-toggler" href="#home">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </button>
+    </header>
+
+
+
+    <section id="home" class="hero-section">
+        <div class="hero hero-left">
+            <div id="animated-hero-overlay" class="overlay"></div>
+            <div class="hero-header">
+                <h2 class="hero-eyebrow">want to become a</h2>
+                <h1 class="hero-title">
+                    <span id="typed_text">UI/UX Designer?<span id="typed_cursorr">_</span></span>
+                </h1>
+            </div>
+            <p id="animated-hero-desc" class="hero-desc">Jumpstart your journey in tech with our courses in Computer
+                Science, Full-Stack Web
+                development, Data Engineering and UI/UX Design. Get hands-on experience and gain essential skills for a
+                successful tech career</p>
+            <a class="link-button" href="#programs">#get_trained</a>
+        </div>
+        <div class="hero hero-right">
+            <div class="overlay"></div>
+            <div class="hero-header">
+                <h2 class="hero-eyebrow">want to hire </h2>
+                <h1 class="hero-title">
+                    JOB-READY TECH TALENT?
+                </h1>
+            </div>
+            <p class="hero-desc">Look no further than our comprehensive talent matching and placement services! Our
+                expert team will connect you with highly trained and skilled developers who are ready to hit the ground
+                running and drive your success.</p>
+            <a class="link-button" href="#hire_talent">#hire_talent</a>
+        </div>
+    </section>
+
+    <section class="" id="hello-world">
+        <div class="section-header">
+            <div class="section-header--title">
+                <p><span class="green">></span> Hello world!</p>
+            </div>
+
+            <div class="section-header--icons">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <div class="iframe-wrapper">
+            <iframe src="https://www.youtube.com/embed/vG7SYQjODTs"
+                title="Mohamad Atout | FSW 21-22" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+
     <script src="./scripts/script.js"></script>
 </body>
 

@@ -17,6 +17,7 @@
     --overlay-green: rgba(40, 238, 167, 0.9);
     --ghost-white: #ecedf3;
     --purple-overlay: rgba(152, 100, 218, 0.9);
+    --main-padding: 20px 15%;
 }
 
 *,
@@ -30,6 +31,10 @@
 html, body {
     height: 100%;
     overflow-x: hidden;
+}
+
+body{
+    position: relative;
 }
 
 h1,
@@ -82,8 +87,12 @@ ul {
 }
 
 @media (max-width: 776px) {
+
+    :root{
+        --main-padding: 20px 5%;
+    }
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     h2 {
