@@ -82,6 +82,7 @@ header button {
     padding: 0 15%;
     color: white;
     background-color: var(--overlay-black);
+    transition: all 0.25s ease-in-out;
     backdrop-filter: blur(5px);
     z-index: 3;
     overflow-y: auto;
@@ -544,3 +545,4 @@ header button {
 .program-uix #bootcamp-date-text {
     color: var(--pink_primary);
 }
+

@@ -85,5 +85,9 @@
         font-size: .8rem;
         margin-bottom: 20px;
     }
-    
+
+    /* programs section */
+    .program-uix .programs-body {
+        border-radius: 10px 0 10px 10px;
+    }   
 }
