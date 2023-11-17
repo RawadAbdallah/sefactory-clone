@@ -14,6 +14,7 @@ const programTitleText = document.getElementById('program-title-text')
 const programTitleColoredText = document.getElementById('program-title-colored')
 const programDescText = document.getElementById('program-desc-text')
 const programDateText = document.getElementById('bootcamp-date-text')
+const programImage = document.getElementById('program-img')
 const fcsBtn = document.getElementById('fcs-program-btn')
 const fswBtn = document.getElementById('fsw-program-btn')
 const fsdBtn = document.getElementById('fsd-program-btn')
@@ -44,7 +45,7 @@ const programs = [
         body: `// SE Factory's 12-week Full-Stack Data course offers robust training in data analysis and engineering. Participants learn to handle large data sets with Python and use libraries like Pandas, NumPy, and Matplotlib for data manipulation and visualization. The course also delves into cloud orchestration, distributed computing, relational databases, and SQL basics. Hands-on projects provide real-world data analysis experience. Upon completion, students gain proficiency in Python for analytics, understand data warehousing, and can effectively visualize and present data insights.`,
         button: fsdBtn,
         img: './assets/fsd.png',
-        color: '#31b7f0'
+        color: '#9864da'
     },
     {
         id: 4,
@@ -55,11 +56,21 @@ const programs = [
         color: '#fb508e'
     }
 ]
+function toggleDropdown(id) {
+  var dropdownContent = document.getElementById(id);
+  if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+  } else {
+      dropdownContent.style.display = "block";
+  }
+}
+
 
 programs.forEach(program => {
     program.button.addEventListener('click', () => {
         programTitleText.innerHTML = program.title
         programDescText.innerHTML = program.body
+        programImage.setAttribute('src', program.img)
         program.button.classList.add('active-button')
         programsWrapper.style.backgroundColor = program.color
         if(program.id === 1){
@@ -87,6 +98,7 @@ programs.forEach(program => {
             fsdBtn.classList.remove('active-button')
             fswBtn.classList.remove('active-button')
         }
+        programImage.setAttribute('alt', activeProgramClass)
     })
 })
 
