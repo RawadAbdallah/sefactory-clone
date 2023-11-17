@@ -546,6 +546,161 @@ header button {
     color: var(--pink_primary);
 }
 
+/* hiring portals */
+
+.hiring-portals{
+    padding: var(--main-padding);
+    display: none;
+}
+
+.portals-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.portal{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    height: 400px;
+    padding: 10px;
+    border: 12px solid;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.portal-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/fsw.png');
+    filter: brightness(.2);
+    background-size: cover;
+    z-index: 0;   
+}
+
+.portal-eyebrow, .portal-footer{
+    position: relative;
+    z-index: 1;
+}
+
+.portal-title--desc{
+    color: var(--grey);
+    font-weight: bold;
+}
+
+.portal-title{
+    font-size: 2rem;
+}
+
+.portal-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.fields{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.field{
+    border-radius: 4px;
+    padding: 4px;
+    font-weight: bold;
+    font-size: .8rem;
+    font-family: 'Noto Sans mono', sans-serif
+}
+
+.portal-footer button {
+    text-align: right;
+    padding: 10px;
+    background-color: var(--background);
+    border: 1px solid var(--background);
+    transition: all .15s ease-in-out;
+    cursor: pointer;
+}
+
+.portal-footer button a {
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+
+.portal-footer button:active{
+    background-color: transparent;
+}
+
+.green-portal{
+    border-color: var(--sef_primary);
+}
+.green-portal .portal-title{
+    color: var(--sef_primary)
+}
+
+.green-portal .field{
+    background-color: var(--sef_primary);
+}
+
+.green-portal .portal-footer button:active{
+    border-color: var(--sef_primary);
+}
+
+.green-portal .portal-footer button:active a{
+    color: var(--sef_primary)
+}
+
+
+.purple-portal{
+    border-color: var(--ppl_primary);
+}
+.purple-portal .portal-title{
+    color: var(--ppl_primary);
+}
+
+.purple-portal .field{
+    background-color: var(--ppl_primary);
+}
+
+.purple-portal .portal-footer button:active{
+    border-color: var(--ppl_primary);
+}
+
+.purple-portal .portal-footer button:active a{
+    color: var(--ppl_primary)
+}
+
+
+.pink-portal{
+    border-color: var(--pink_primary);
+}
+.pink-portal .portal-title{
+    color: var(--pink_primary)
+}
+
+.pink-portal .field{
+    background-color: var(--pink_primary);
+}
+
+.pink-portal .portal-footer button:active{
+    border-color: var(--pink_primary);
+}
+
+.pink-portal .portal-footer button:active a{
+    color: var(--pink_primary)
+}
+
+
+
+
+
 /* hire talent section */
 
 #hire-talent{
