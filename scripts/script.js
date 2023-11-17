@@ -89,3 +89,62 @@ programs.forEach(program => {
         }
     })
 })
+
+
+
+
+
+const slides = document.querySelectorAll('.testimonial');
+const dotsContainer = document.getElementById('dots-container');
+
+let currentIndex = 0;
+
+function showSlide(index) {
+  const transformValue = -index * 100 + '%';
+  document.querySelector('.testimonials-wrapper').style.transform = `translateX(${transformValue})`;
+
+  // Update active dot
+  const dots = document.querySelectorAll('.dot');
+  dots.forEach((dot, i) => {
+    dot.classList.toggle('active', i === index);
+  });
+}
+
+function handleDotClick(index) {
+  currentIndex = index;
+  showSlide(currentIndex);
+}
+
+// Create dots
+slides.forEach((_, index) => {
+  const dot = document.createElement('div');
+  dot.classList.add('dot');
+  dot.addEventListener('click', () => handleDotClick(index));
+  dotsContainer.appendChild(dot);
+});
+
+// Show the initial slide
+showSlide(currentIndex);
+
+// Swipe functionality
+let startX;
+
+function handleTouchStart(event) {
+  startX = event.touches[0].clientX;
+}
+
+function handleTouchEnd(event) {
+  const endX = event.changedTouches[0].clientX;
+  const deltaX = startX - endX;
+
+  if (deltaX > 0 && currentIndex < slides.length - 1) {
+    currentIndex++;
+  } else if (deltaX < 0 && currentIndex > 0) {
+    currentIndex--;
+  }
+
+  showSlide(currentIndex);
+}
+
+document.addEventListener('touchstart', handleTouchStart);
+document.addEventListener('touchend', handleTouchEnd);
