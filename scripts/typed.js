@@ -16,3 +16,4 @@ let animatedTypedText = new Typed('#typed_text',{
         
     }
 });
+

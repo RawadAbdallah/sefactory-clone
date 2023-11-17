@@ -546,3 +546,82 @@ header button {
     color: var(--pink_primary);
 }
 
+/* hire talent section */
+
+#hire-talent{
+    background-color: var(--black);
+    padding: var(--main-padding)
+}
+
+.recruitment-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.recruitment-wrapper--top-section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    width: 100%;
+    color: white;
+    background-color: var(--black-2);
+    border-radius: 10px;
+}
+
+.recruitment-wrapper--top-section h2{
+    color: white;
+    text-transform: none;
+}
+
+.recruitment-wrapper--top-section h3{
+    padding: 10px;
+    width: 100%;
+    max-width: 730px;
+    color: white;
+    background-color: var(--black);
+    font-size: 1rem;
+    font-weight: normal;
+    text-transform: none;
+}
+
+.recruitment-wrapper--top-section h3 span{
+    font-weight: bold;
+}
+
+.recruitment-wrapper--top-section ol{
+    list-style: decimal inside;
+    font-family: 'Noto Sans Mono', sans-serif;
+    font-size: .8rem;
+    color: var(--light_grey)
+}
+
+.recruitment-wrapper--top-section button{
+    padding: 10px;    
+    background-color: var(--black);
+    border: none;
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+.recruitment-wrapper--top-section button a {
+    color: white;
+}
+
+.recruitment-wrapper--bottom-section{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 100%;
+    background-color: var(--black-2);
+    border-radius: 10px;
+    color: white;
+}
+
+.recruitment-wrapper--bottom-section p{
+    font-size: 1rem;
+    font-family: 'Noto Sans';
+}
+

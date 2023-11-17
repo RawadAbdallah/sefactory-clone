@@ -62,6 +62,14 @@
     .programs-body-right{
         justify-content: center;
     }
+
+    /* Hire Talent  */
+
+    .recruitment-wrapper--bottom-section{
+        padding: 20px;
+      flex-direction: column;
+    }
+    
 }
 
 @media (max-width: 550px) {
