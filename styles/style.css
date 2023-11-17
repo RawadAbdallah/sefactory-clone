@@ -936,3 +936,49 @@ header button {
         opacity: 1;
     }
 }
+
+
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    padding: var(--main-padding);
+    background-color: var(--black);
+    padding-top: 50px;
+}
+
+#newsletter h2{
+    color: white;
+    text-transform: none;
+}
+
+#newsletter p{
+    font-size: .8rem;
+    color: var(--grey);
+}
+
+.newsletter-right{
+    display: flex;
+    align-items: stretch;
+    height: 40px;
+}
+
+#newsletter input{
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+#newsletter input::placeholder{
+    font-family: 'Noto San mono', sans-serif;
+}
+
+#newsletter button{
+    padding: 0 20px;
+    background-color: var(--black-2);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Noto Sans mono', sans-serif;
+    text-transform: uppercase;
+    border: none;
+}

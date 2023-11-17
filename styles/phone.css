@@ -79,6 +79,14 @@
       .testimonial{
         flex-direction: column;
     }
+
+    /* newsletter */
+    #newsletter{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
 }
 
 @media (max-width: 550px) {
